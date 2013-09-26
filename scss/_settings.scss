@@ -1,0 +1,24 @@
+$backgroundColor: #2b2b2b;
+
+// Primary/body text
+$font: Arial, sans-serif;
+$font-size: 36px;
+$player1-color: red;
+$player2-color: blue;
+$ball-color: black;
+
+@mixin box-sixing() {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box; /* Opera/IE 8+ */   
+  
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}

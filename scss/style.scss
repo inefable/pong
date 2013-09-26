@@ -1,0 +1,53 @@
+@import "reset";
+@import "settings";
+
+* {
+  @include box-sixing();
+}
+
+body {
+  font-family: $font;
+}
+
+#field{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  text-indent: -9999px;
+  &#p1{
+    background-color: $player1-color;
+    left: 0;
+  }
+  &#p2{
+    background-color: $player2-color;
+    right: 0;
+  }
+}
+
+#ball{
+  background-color: $ball-color;
+  @include border-radius(100px);
+  color: #fff;
+  position: absolute;
+  text-indent: -9999px;
+}
+
+p {
+  color: #fff;
+  background-color: red;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  &#p1Score {
+    left: 0;
+  }
+  &#p2Score {
+    right: 0;
+  }
+}
